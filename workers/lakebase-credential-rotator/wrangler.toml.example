@@ -1,7 +1,7 @@
 name = "lakebase-credential-rotator"
 main = "src/index.ts"
 compatibility_date = "2026-03-03"
-workers_dev = true  # set false in production
+workers_dev = false  # set true only for debugging purposes
 
 [triggers]
 crons = ["8,28,48 * * * *"]

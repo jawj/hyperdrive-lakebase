@@ -65,13 +65,17 @@ crons = ["8,28,48 * * * *"]
 pnpm run deploy
 ```
 
-### Test
+### Web access
+
+Ensure `workers_dev = false` in `wrangler.toml` to prevent public access.
+
+You can set it `true` temporarily for debugging/test purposes. Then you would do:
 
 ```bash
 curl "https://<your-worker-subdomain>/"
 ```
 
-Expected result is similar to:
+And the expected result should be similar to:
 
 ```json
 {
@@ -97,11 +101,6 @@ Expected result is similar to:
   }
 }
 ```
-
-### Production
-
-Once working, set `workers_dev = false` in `wrangler.toml` to prevent public access.
-
 
 ## Worker 2: Connection test app
 

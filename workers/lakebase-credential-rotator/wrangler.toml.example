@@ -1,0 +1,26 @@
+name = "lakebase-credential-rotator"
+main = "src/index.ts"
+compatibility_date = "2026-03-03"
+workers_dev = true  # set false in production
+
+[triggers]
+crons = ["8,28,48 * * * *"]
+
+[observability]
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+[vars]
+CLOUDFLARE_ACCOUNT_ID = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+HYPERDRIVE_CONFIG_ID = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+# plus `pnpx wrangler secret put CLOUDFLARE_API_TOKEN`
+
+DATABRICKS_HOST = "dbc-xxxxxxxx-xxxx.cloud.databricks.com"
+DATABRICKS_CLIENT_ID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+# plus `pnpx wrangler secret put DATABRICKS_CLIENT_SECRET`
+
+LAKEBASE_ENDPOINT = "projects/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/branches/br-adj-noun-xxxxxxxx/endpoints/primary"
+LAKEBASE_HOST = "ep-adj-noun-xxxxxxxx.database.region.cloud.databricks.com"
+LAKEBASE_PORT = "5432"
+LAKEBASE_DATABASE = "databricks_postgres"

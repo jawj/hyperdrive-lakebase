@@ -1,0 +1,7 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./workers/lakebase-credential-rotator" },
+    { "path": "./workers/lakebase-connection-test" }
+  ]
+}

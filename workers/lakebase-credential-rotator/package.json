@@ -1,0 +1,15 @@
+{
+  "name": "lakebase-credential-rotator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "pnpm exec wrangler deploy",
+    "typecheck": "pnpm exec tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260305.1",
+    "typescript": "latest",
+    "wrangler": "^4.71.0"
+  }
+}

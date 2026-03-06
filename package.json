@@ -1,0 +1,13 @@
+{
+  "name": "hyperdrive-lakebase",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.15.1",
+  "scripts": {
+    "deploy": "pnpm -r run deploy",
+    "typecheck": "pnpm -r run typecheck"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}

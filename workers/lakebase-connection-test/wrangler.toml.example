@@ -1,0 +1,14 @@
+name = "lakebase-connection-test"
+main = "src/index.ts"
+compatibility_date = "2026-03-03"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+[observability]
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
